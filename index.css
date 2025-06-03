@@ -99,20 +99,32 @@ nav > div{ display: flex; justify-content: center; align-items: center; gap: 1re
 
 .menu-icon { display: none; color: var(--primary); font-size: var(--text-h3);}
 
-.sidebar{display: none; min-height: 100vh; background-color: #FA7436; width: 350px; position: absolute; top: 0; z-index: 99;}
+.sidebar{display: none; min-height: 100vh; background-color: #FA7436; width: 350px; padding: 2rem; position: absolute; top: 0; z-index: 99;}
+
+.sidebar-menu{display: flex; flex-direction: column; align-items: center; gap: 1.5rem; justify-content: center; margin-bottom: 3rem;}
+
+.sidebar > .close-icon{color: var(--white);}
+.sidebar-menu > li {width: 100%; text-align: center; padding: 1rem 2rem;}
+
+.sidebar-menu li .menu-item{color: var(--white); font-size: var(--text-sm); font-weight: var(--font-weight-bolder); }
+
+.sidebar-menu > li:hover{background-color: var(--white);}
+
+.sidebar-menu > li:hover a{color: var(--primary);}
+
+.sidebar-btn{ display: flex;justify-content: center; gap: 2rem; align-items: center;flex-wrap: wrap;}
+
+.sidebar-btn > .btn{ background-color: var(--white); color:var(--primary); font-weight: var(--font-weight-bolder);}
+
+.sidebar-btn > .btn:hover{ border: 2px solid var(--white); color: var(--white); background-color: var(--primary);}
+
 
 /* 880px / 16px =  */
 @media(max-width:55rem){
     .menu-icon{display: block;}
     .menu-section , .nav-right{display: none;}
-    nav{justify-content: space-between;}
-
-    .sidebar{display: block; padding: 2rem;}
-    .sidebar-menu{display: flex; flex-direction: column; align-items: center; gap: 1.5rem; justify-content: stretch;}
-
-    .sidebar-menu li .menu-item{color: var(--white); font-size: var(--text-sm); font-weight: var(--font-weight-bolder);}
-
-    .sidebar-menu:hover{ background-color: var(--white); color: var(--primary);}
+     nav{justify-content: space-between;}
+    
 
 
 

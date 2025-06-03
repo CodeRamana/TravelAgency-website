@@ -32,12 +32,15 @@
                 <a href="#" class="btn">Sign up</a>
             </div>
             <div>
-                <span class="material-symbols-outlined icon-filled menu-icon">
+                <span class="material-symbols-outlined icon-filled menu-icon" onclick="document.getElementById('sidebar').style.display = 'block'">
                     menu
                 </span>
             </div>
         </nav>
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
+            <span class="material-symbols-outlined icon-filled close-icon" onclick="document.getElementById('sidebar').style.display = 'none'">
+close
+</span>
             <ul class="sidebar-menu">
                 <li><a class="menu-item" href="#">Home</a></li>
                 <li><a class="menu-item" href="#">About</a></li>
