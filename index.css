@@ -77,7 +77,7 @@ html{ font-size: 62.5%;}
 
 body{ font-family: var(--font-family-primary); font-size: var(--text-xs); font-weight: var(--font-weight-normal); line-height: var(--line-height-bigger); letter-spacing: var(--letter-spacing-tight);}
 
-nav, .hero-section, .feature-section, .deals-section{ max-width: 1200px; width: 90%; margin: 0 auto;}
+nav, .hero-section, .feature-section, .deals-section, .vacation-section{ max-width: 1200px; width: 90%; margin: 0 auto;}
 
 .icon-outlined {font-variation-settings: 'FILL' 0, 'wght' 400, 'opsz' 24;}
 
@@ -172,8 +172,8 @@ nav > div{ display: flex; justify-content: center; align-items: center; gap: 1re
 .feature-main >img{position: absolute; top:0; right: 160px;}
 
 /* ------- deals-section --------- */
-.deals-section{padding: 5rem;}
-.deals-main{text-align: center;}
+.deals-section{padding: 5rem; margin-bottom: 5rem;}
+.deals-main{text-align: center; margin-bottom: 5rem;}
 .deals-main > h1{font-size: var(--text-h3);}
 .deals-main > h1 > span{color: var(--primary);}
 .deals-main > p{color: var(--grey-tint); font-weight: var(--font-weight-bold); font-size: var(--text-xs);}
@@ -191,8 +191,26 @@ nav > div{ display: flex; justify-content: center; align-items: center; gap: 1re
 .deals-details > div{display: flex; gap: 1rem; align-items: center;color: var(--grey-tint);font-weight: var(--font-weight-bold);}
 .active{background-color: #FFE7DB; color: var(--primary); padding: 0.5rem; border-radius: 5px; font-weight: var(--font-weight-bold);}
 
-.deals-card{position: relative;}
-.deals-card > .btn{position: absolute; top: 150px; left: 45px;}
+.deals-card {position: relative;}
+.deals-card > .btn {display: none; position: absolute;top: 200px;left: 45px;}
+.deals-card:hover .hover-img { opacity: 0.5;}
+.deals-card:hover .hover-btn { display: block;}
+
+.vacation-section{padding: 5rem; margin-bottom: 5rem;}
+.vacation-main{text-align: center; margin-bottom: 5rem;}
+.vacation-main > h1{font-size: var(--text-h3);}
+.vacation-main > h1 > span{color: var(--primary);}
+.vacation-main > p{color: var(--grey-tint); font-weight: var(--font-weight-bold); font-size: var(--text-xs);}
+
+.vacation-content{display: flex; justify-content: center; align-items: center; gap: 3rem;}
+.vacation-content > .vacation-card > img{max-width: 369px; width: 100%;}
+.vacation-card{display: flex; flex-direction: column; background-color: var(--white);}
+.vacation-details, .vacation-heading{display: flex;padding: 1rem 2rem; justify-content: space-between;}
+
+.vacation-heading > p { font-size: var(--text-sm); font-weight: var(--font-weight-bolder);color: var(--primary);}
+.vacation-heading > .vacation-card-heading{color: var(--grey-shade);}
+.vacation-details > p{display: flex; align-items: center; gap: 5px; color: var(--grey-tint); font-size: var(--text-xs); font-weight: var(--font-weight-bold);}
+.vacation-details > p >span{color: var(--primary);}
 /* 880px / 16px =  */
 @media(max-width:55rem){
     .menu-icon{display: block;}
