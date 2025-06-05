@@ -262,7 +262,7 @@ footer{background-color: var(--light); padding: 5rem; padding-top: 10rem;}
 .brand-logo{max-width: 100px; width: 100%;}
 
 .media-icons{display: flex; gap: 2rem;}
-.nav-btn{ background-color: var(--primary);}
+.media-btn{ background-color: var(--primary); padding: 1rem; border-radius: 50%; display: flex; width: 45px;}
 .footer-left > p{color: var(--grey-tint); font-size: var(--text-xs); font-weight: var(--font-weight-bold);}
 .footer-right > div{display: flex; flex-direction: column; gap: 2rem;}
 .footer-right > div > .footer-heading{font-family: var(--font-family-secondary); font-size: var(--text-xs); font-weight: var(--font-weight-bolder);}
@@ -324,10 +324,14 @@ footer{background-color: var(--light); padding: 5rem; padding-top: 10rem;}
     width: 100%;
     margin-top: -150px;
 }
-.card2{top: 100px;left: 220px;}
+.card2{top: 85px; left: 161px;}
 .card1{top: 30px;right: 230px;}
 .card3{top: 160px;right: 200px;}
 .small-btn{display: none;}
+.hero-card{flex-wrap: wrap;}
+.footer-right{gap: 3rem;}
+.footer-right > div {flex-grow:1;}
+.subscribe-section > h1{font-size: var(--text-sm);}
 }
 
 
